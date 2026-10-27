@@ -1,8 +1,12 @@
 [submodule "SuitVenturesMarket-frontend"]
 	path = SuitVenturesMarket-frontend
-	url = git@github.com:KobeSergio/suitventures-markets-frontend.git
+	url = git@github.com:maxlong-markets/suitventures-markets-frontend.git
 	branch = main
 [submodule "SuitVenturesMarket-indexer"]
 	path = SuitVenturesMarket-indexer
-	url = git@github.com:KobeSergio/suitventures-markets-indexer.git
+	url = git@github.com:maxlong-markets/suitventures-markets-indexer.git
+	branch = main
+[submodule "SuitVenturesMarket-contracts"]
+	path = SuitVenturesMarket-contracts
+	url = git@github.com:maxlong-markets/suitventures-markets-contracts.git
 	branch = main

@@ -32,7 +32,7 @@ Taken from production on 27 October 2026.
 | Repository | What it is | Status |
 |---|---|---|
 | [suitventures-markets-frontend](https://github.com/maxlong-markets/suitventures-markets-frontend) | Next.js 16 app, the API route handlers, the chain reader and the top-holder builder that run as Vercel crons, the Supabase schema and migrations, the fork harness. | Live on Vercel. |
-| [suitventures-markets-contracts](https://github.com/maxlong-markets/suitventures-markets-contracts) | Foundry. `SVRouter` (the fee router), `SVLaunchpad` and `SVLaunchToken` (the instant launchpad), deploy scripts, unit, fuzz, invariant and mainnet-fork tests. | Both contracts deployed and in use. CI runs build, format and the offline tests. |
+| [suitventures-markets-contracts](https://github.com/maxlong-markets/suitventures-markets-contracts) | Foundry. `SVRouter` (the fee router), `SVLaunchpad` and `SVLaunchToken` (the instant launchpad), deploy scripts, unit, fuzz, invariant and mainnet-fork tests. | Both contracts deployed and in use. CI runs the build with size checks and the offline tests. |
 | [suitventures-markets-indexer](https://github.com/maxlong-markets/suitventures-markets-indexer) | The first data layer: an Envio HyperIndex indexer. | Decommissioned 21 September 2026, superseded by the chain reader in the frontend. Kept as the record of the first approach and why it was replaced. |
 | this repository | System README, [build record and Decision Log](docs/decision-log.md), [research](research/), [proposals](proposals/). | |
 

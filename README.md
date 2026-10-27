@@ -134,7 +134,7 @@ The full reviews are in each repository's `SECURITY.md`: [frontend](https://gith
 
 | Repository | What exists | How to run |
 |---|---|---|
-| contracts | 194 test functions: unit (the real Permit2 bytecode etched at its canonical address, a mock Universal Router that decodes the real command encodings), fuzz, invariant, and fork tests against the live Permit2, Universal Router and three real pools at a pinned block. 100 % coverage on `SVRouter`. | `forge test`, `forge coverage --report summary`, fork suite with `ROBINHOOD_RPC_URL` set |
+| contracts | 183 offline tests in 12 suites (measured 27 Oct 2026): unit (the real Permit2 bytecode etched at its canonical address, a mock Universal Router that decodes the real command encodings), fuzz at 256 runs, two invariant suites, plus fork tests against the live Permit2, Universal Router and real pools at a pinned block. 100 % line, statement, branch and function coverage on all three `src/` contracts. | `forge test --no-match-path 'test/fork/*'`, `forge coverage --report summary`, fork suite with `ROBINHOOD_RPC_URL` set |
 | frontend | About 1,700 vitest tests across 129 files: pure fold arithmetic, route handlers, SIWE, rate limits, the store against an in-process Postgres (pglite), components with Testing Library; plus a fork harness (`scripts/fork/`) that deploys the router to a local anvil fork and runs a swap end to end. | `npm test`, `npm run fork:anvil` then `npm run fork:e2e` |
 | indexer | 18 vitest files on the handlers and the fold arithmetic, and a live validation against a real pool. | `npm test` |
 
